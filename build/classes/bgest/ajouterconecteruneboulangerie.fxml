@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bgest.AjouterconecteruneboulangerieController">
+   <left>
+      <Pane prefHeight="400.0" prefWidth="267.0" style="-fx-background-color: ORANGE;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="creationpane2" layoutY="150.0" prefHeight="200.0" prefWidth="265.0">
+               <children>
+                  <Label layoutX="10.0" layoutY="25.0" text="la boulagerie existe deja sur notre serveur?">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="accederboulangerie" layoutX="46.0" layoutY="127.0" onMouseClicked="#accederboulangerieclique1" prefHeight="25.0" prefWidth="187.0" style="-fx-background-color: #37e6d8;" text="acceder a la boulangerie" />
+               </children>
+            </Pane>
+            <Pane fx:id="connectionpane2" layoutX="4.0" layoutY="148.0" prefHeight="206.0" prefWidth="261.0">
+               <children>
+                  <Label layoutX="42.0" layoutY="28.0" text="la boulangerie n'existe pas " />
+                  <Label layoutX="60.0" layoutY="45.0" text="sur nos serveur?" />
+                  <JFXButton fx:id="creecomdeboulangerie" layoutX="14.0" layoutY="130.0" onMouseClicked="#creecomdeboulangerieclique" style="-fx-background-color: #37e6d8;" text="cree la compte de la boulangerie" />
+               </children>
+            </Pane>
+            <Label layoutX="28.0" layoutY="71.0" text="bakery manager">
+               <font>
+                  <Font name="Edwardian Script ITC" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </left>
+   <right>
+      <Pane prefHeight="549.0" prefWidth="397.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="creationpane" layoutX="-1.0" prefHeight="549.0" prefWidth="398.0">
+               <children>
+                  <TextField fx:id="bnom1" layoutX="234.0" layoutY="125.0" style="-fx-border-color: #37e6d8;" />
+                  <TextField fx:id="badresse" layoutX="234.0" layoutY="165.0" style="-fx-border-color: #37e6d8;" />
+                  <TextField fx:id="nomgerant" layoutX="234.0" layoutY="303.0" style="-fx-border-color: #37e6d8;" />
+                  <TextField fx:id="prenomgerant" layoutX="234.0" layoutY="346.0" style="-fx-border-color: #37e6d8;" />
+                  <Label layoutX="15.0" layoutY="118.0" text="nom de la boulangerie">
+                     <font>
+                        <Font name="Edwardian Script ITC" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="159.0" text="addresse de la boulangerie">
+                     <font>
+                        <Font name="Edwardian Script ITC" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="303.0" text="nom du gerant ">
+                     <font>
+                        <Font name="Edwardian Script ITC" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="9.0" layoutY="341.0" text="prenom du gerant">
+                     <font>
+                        <Font name="Edwardian Script ITC" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="7.0" layoutY="415.0" text="date d'ambauche">
+                     <font>
+                        <Font name="Edwardian Script ITC" size="28.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="dateembauche" layoutX="237.0" layoutY="420.0" prefHeight="28.0" prefWidth="148.0" style="-fx-border-color: #37e6d8;" />
+                  <JFXButton fx:id="ajouter" layoutX="178.0" layoutY="507.0" onMouseClicked="#ajouterclique" style="-fx-border-color: #37e6d8;" text="ajouter" />
+                  <Label fx:id="labellogo" layoutX="177.0" prefHeight="79.0" prefWidth="95.0" style="-fx-border-color: #37e6d8;" />
+                  <Label layoutX="11.0" layoutY="453.0" text="mots de passe">
+                     <font>
+                        <Font name="Edwardian Script ITC" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="64.0" layoutY="21.0" prefHeight="38.0" prefWidth="84.0" text="logo">
+                     <font>
+                        <Font name="Edwardian Script ITC" size="28.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="insettlogo" layoutX="195.0" layoutY="85.0" onMouseClicked="#insertlogocliuque" prefHeight="28.0" prefWidth="60.0" style="-fx-border-color: #37e6d8;" text="inserer" />
+                  <Label layoutX="14.0" layoutY="237.0" text="mot de passe">
+                     <font>
+                        <Font name="Edwardian Script ITC" size="28.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="bpassword1" layoutX="234.0" layoutY="243.0" promptText="code pour acceder a la boulangerie" />
+                  <PasswordField fx:id="gerantpassword" layoutX="237.0" layoutY="460.0" prefHeight="25.0" prefWidth="149.0" style="-fx-border-color: #37e6d8;" />
+                  <TextField fx:id="devise" layoutX="234.0" layoutY="202.0" promptText="FCFA" style="-fx-border-color: #37e6d8;" />
+                  <Label layoutX="14.0" layoutY="197.0" text="unité de vente">
+                     <font>
+                        <Font name="Edwardian Script ITC" size="28.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="emailgerant" layoutX="234.0" layoutY="384.0" style="-fx-border-color: #37e6d8;" />
+                  <Label layoutX="10.0" layoutY="379.0" text="email du gerant">
+                     <font>
+                        <Font name="Edwardian Script ITC" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="connectionpane" prefHeight="549.0" prefWidth="397.0">
+               <children>
+                  <Pane fx:id="cgerantpane" layoutX="6.0" layoutY="315.0" prefHeight="171.0" prefWidth="384.0">
+                     <children>
+                        <PasswordField fx:id="cgerantpassword" layoutX="228.0" layoutY="132.0" style="-fx-border-color: #37e6d8;" />
+                        <Label layoutX="14.0" layoutY="125.0" prefHeight="42.0" prefWidth="148.0" text="votre mot de passe">
+                           <font>
+                              <Font name="Edwardian Script ITC" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="40.0" text="votre nom">
+                           <font>
+                              <Font name="Edwardian Script ITC" size="28.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="cnomgerant" layoutX="228.0" layoutY="47.0" style="-fx-border-color: #37e6d8;" />
+                        <Label layoutX="14.0" layoutY="78.0" text="email">
+                           <font>
+                              <Font name="Edwardian Script ITC" size="28.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="cnomgerant1" layoutX="228.0" layoutY="86.0" style="-fx-border-color: #37e6d8;" />
+                     </children>
+                  </Pane>
+                  <PasswordField fx:id="cboulangeriepassword" layoutX="241.0" layoutY="190.0" style="-fx-border-color: #37e6d8;" />
+                  <Label layoutX="39.0" layoutY="174.0" text="mot de passe ">
+                     <font>
+                        <Font name="Edwardian Script ITC" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="cboulangerienom" layoutX="233.0" layoutY="90.0" style="-fx-border-color: #37e6d8;" />
+                  <Label layoutX="19.0" layoutY="83.0" text="nom de la boulangerie">
+                     <font>
+                        <Font name="Edwardian Script ITC" size="30.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="continuer" layoutX="172.0" layoutY="510.0" onMouseClicked="#continuerclique" style="-fx-border-color: #37e6d8;" text="continuer" />
+                  <Label layoutX="14.0" layoutY="264.0" text="etes vous le gerant?">
+                     <font>
+                        <Font name="Edwardian Script ITC" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="185.0" prefHeight="45.0" prefWidth="108.0" text="de la boulangerie">
+                     <font>
+                        <Font name="Edwardian Script ITC" size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXToggleButton fx:id="geranttogle" layoutX="207.0" layoutY="256.0" text="oui" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </right>
+</BorderPane>

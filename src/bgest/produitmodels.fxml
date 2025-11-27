@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="box" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="132.0" prefWidth="398.0" style="-fx-border-color: ORANGE; -fx-border-radius: 36;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bgest.ProduitmodelsController">
+   <children>
+      <Label fx:id="pnom" layoutX="122.0" prefHeight="33.0" prefWidth="287.0">
+         <font>
+            <Font name="Bodoni MT" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="pfournisseur" layoutX="205.0" layoutY="71.0" prefHeight="40.0" prefWidth="150.0" textAlignment="CENTER">
+         <font>
+            <Font name="Bodoni MT" size="15.0" />
+         </font>
+      </Label>
+      <Text layoutX="173.0" layoutY="-94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pain au lai de vache elever en plaine aire" wrappingWidth="213.990234375" />
+      <Label fx:id="pdescription" layoutX="122.0" layoutY="33.0" prefHeight="40.0" prefWidth="301.0" textAlignment="CENTER">
+         <font>
+            <Font name="Bodoni MT" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="71.0" prefHeight="40.0" prefWidth="95.0" text="fournisseur :" textAlignment="CENTER">
+         <font>
+            <Font name="Bodoni MT" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="91.0" prefHeight="40.0" prefWidth="95.0" text="disponible :" textAlignment="CENTER">
+         <font>
+            <Font name="Bodoni MT" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="quantité" layoutX="205.0" layoutY="94.0" prefHeight="33.0" prefWidth="95.0" text="100" textAlignment="CENTER">
+         <font>
+            <Font name="Bodoni MT" size="15.0" />
+         </font>
+      </Label>
+      <Pane layoutX="407.0" prefHeight="182.0" prefWidth="31.0" />
+      <ImageView fx:id="pimage" fitHeight="110.0" fitWidth="89.0" layoutX="19.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

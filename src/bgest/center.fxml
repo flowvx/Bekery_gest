@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1295.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bgest.CenterController">
+   <children>
+      <Pane prefHeight="61.0" prefWidth="1295.0">
+         <children>
+            <JFXButton fx:id="facture" layoutX="908.0" layoutY="20.0" onMouseClicked="#btnfacture" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: ORANGE; -fx-background-radius: 10;" text="ETABLIRE UNE FACTURE" />
+            <Label fx:id="nomboulangerie" layoutX="108.0" layoutY="-3.0" prefHeight="67.0" prefWidth="413.0" text="Label" textFill="#ffbc0f">
+               <font>
+                  <Font name="Edwardian Script ITC" size="48.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="logoboulangerie" fitHeight="53.0" fitWidth="71.0" layoutX="38.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <Label layoutX="63.0" layoutY="233.0" prefHeight="36.0" prefWidth="276.0" text="nos produit" textFill="#ff0f0f">
+         <font>
+            <Font name="Edwardian Script ITC" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="54.0" prefHeight="50.0" prefWidth="276.0" text="nos produit fars" textFill="#eb1e1e">
+         <font>
+            <Font name="Edwardian Script ITC" size="36.0" />
+         </font>
+      </Label>
+      <Separator layoutX="-2.0" layoutY="68.0" prefHeight="4.0" prefWidth="1295.0" />
+      <ScrollPane fx:id="mosxellbox" layoutX="51.0" layoutY="101.0" prefHeight="141.0" prefWidth="1241.0" style="-fx-background-color: #ffffff; -fx-background-radius: 26;">
+         <content>
+            <HBox fx:id="producbox" alignment="CENTER" prefHeight="144.0" prefWidth="1225.0" spacing="20.0" />
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="51.0" layoutY="307.0" prefHeight="402.0" prefWidth="1241.0">
+         <content>
+            <VBox fx:id="productplanebox" prefHeight="401.0" prefWidth="1234.0" />
+         </content>
+      </ScrollPane>
+      <Separator layoutX="2.0" layoutY="249.0" prefHeight="4.0" prefWidth="1295.0" />
+      <Separator layoutX="2.0" layoutY="99.0" prefHeight="4.0" prefWidth="1295.0" />
+      <Separator layoutX="2.0" layoutY="301.0" prefHeight="4.0" prefWidth="1295.0" />
+      <Pane fx:id="optionpane" layoutX="-2.0" layoutY="99.0" onMouseExited="#optionpaneexit" onMouseMoved="#optionpanemousemove" prefHeight="527.0" prefWidth="234.0" style="-fx-background-color: #0f2365; -fx-background-radius: 0  25 25 0;">
+         <children>
+            <JFXButton fx:id="btnfournisseur" layoutX="4.0" layoutY="177.0" onMouseClicked="#btnfournisseurclique" prefHeight="36.0" prefWidth="231.0" style="-fx-background-color: #0c0f31; -fx-background-radius: 36 0 0 36;" text="fournisseur" textAlignment="JUSTIFY" textFill="#fdfdfd" />
+            <Label fx:id="APPNAME" alignment="CENTER" layoutX="12.0" layoutY="14.0" prefHeight="50.0" prefWidth="244.0" text="bakery manager" textFill="#ebc21d">
+               <font>
+                  <Font name="Edwardian Script ITC" size="42.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="accesprodut" layoutX="4.0" layoutY="235.0" onMouseClicked="#accesprodutclique" prefHeight="36.0" prefWidth="231.0" style="-fx-background-color: #0c0f31; -fx-background-radius: 36 0 0 36;" text="produit" textAlignment="JUSTIFY" textFill="#fdfdfd" />
+            <JFXButton fx:id="viewcommand" layoutX="4.0" layoutY="290.0" onMouseClicked="#viewcommandclique" prefHeight="36.0" prefWidth="231.0" style="-fx-background-color: #0c0f31; -fx-background-radius: 36 0 0 36;" text="commande" textAlignment="JUSTIFY" textFill="#fdfdfd" />
+            <JFXButton fx:id="dashbord" layoutX="4.0" layoutY="347.0" onMouseClicked="#dashbordclique" prefHeight="36.0" prefWidth="231.0" style="-fx-background-color: #0c0f31; -fx-background-radius: 36 0 0 36;" text="Tableau de bord" textAlignment="JUSTIFY" textFill="#fdfdfd" />
+            <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="198.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_line_chart_64px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="198.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_e-commerce_64px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="198.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_product_management_64px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="198.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_semi_truck_64px.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="boutonacceuil" layoutX="4.0" layoutY="124.0" onMouseClicked="#btnacceuil" prefHeight="36.0" prefWidth="231.0" style="-fx-background-color: #0c0f31; -fx-background-radius: 36 0 0 36;" text="acceuil" textAlignment="JUSTIFY" textFill="#fdfdfd" />
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="27.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="198.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_homebrew_64px.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="demandeaufournisseur" layoutX="2.0" layoutY="399.0" onMouseClicked="#demandeaufournisseurclique" prefHeight="36.0" prefWidth="231.0" style="-fx-background-color: #0c0f31; -fx-background-radius: 36 0 0 36;" text="demandé au fournisseurs" textAlignment="JUSTIFY" textFill="#fdfdfd" />
+            <Separator layoutY="452.0" prefHeight="4.0" prefWidth="234.0" />
+            <JFXButton fx:id="MONCOMPTE" layoutX="4.0" layoutY="463.0" onMouseClicked="#MONCOMPTECLIQUE" prefHeight="36.0" prefWidth="231.0" style="-fx-background-color: #0c0f31; -fx-background-radius: 36 0 0 36;" text="MON COMPTE" textAlignment="JUSTIFY" textFill="#fdfdfd" />
+            <ImageView fx:id="IMAUTILISATEUR" fitHeight="28.0" fitWidth="36.0" layoutX="197.0" layoutY="467.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Employee_man-128.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="36.0" layoutX="197.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_import_64px.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="COMPTESUTILISATEURS" layoutX="4.0" layoutY="463.0" onMouseClicked="#COMPTESUTILISATEURSCLIQUE" prefHeight="36.0" prefWidth="231.0" style="-fx-background-color: #0c0f31; -fx-background-radius: 36 0 0 36;" text="COMTES DES UTILISATEUR" textAlignment="JUSTIFY" textFill="#fdfdfd" />
+            <ImageView fx:id="IMGCOMTES" fitHeight="28.0" fitWidth="36.0" layoutX="197.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_user_groups_40px_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

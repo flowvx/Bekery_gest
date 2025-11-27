@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="662.0" prefWidth="800.0" style="-fx-border-color: #ffbc0f;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bgest.MAKECOMMANDEController">
+   <top>
+      <Pane prefHeight="151.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btnback" layoutX="10.0" layoutY="14.0" onMouseClicked="#btnbackclique" style="-fx-border-color: #ffbc0f;" text="&lt;" />
+            <TextField fx:id="NOMC" alignment="CENTER" layoutX="347.0" layoutY="55.0" prefHeight="25.0" prefWidth="131.0" promptText="NOM DU CLIENT" />
+            <TextField fx:id="PRENOMC" alignment="CENTER" layoutX="496.0" layoutY="55.0" prefHeight="25.0" prefWidth="134.0" promptText="PRENOM DU CLIENT" />
+            <TextField fx:id="ADRESSEL" alignment="CENTER" layoutX="649.0" layoutY="55.0" prefHeight="25.0" prefWidth="145.0" promptText="ADRESSE DE LIVRAISONT" />
+            <Label layoutX="13.0" layoutY="95.0" text="total de la commande">
+               <font>
+                  <Font name="Edwardian Script ITC" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="prixvue" layoutX="189.0" layoutY="101.0" prefHeight="27.0" prefWidth="71.0" text="0" />
+            <Label fx:id="unité" layoutX="265.0" layoutY="95.0" prefHeight="33.0" prefWidth="130.0" text="unité">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="nomboulangerie1" alignment="CENTER" layoutX="272.0" layoutY="-18.0" prefHeight="67.0" prefWidth="281.0" text="bon de commande" textFill="#ffbc0f" underline="true">
+               <font>
+                  <Font name="Edwardian Script ITC" size="48.0" />
+               </font>
+            </Label>
+            <Label fx:id="nomboulangerie" layoutX="81.0" layoutY="39.0" prefHeight="57.0" prefWidth="255.0" text="Label" textFill="#ffbc0f">
+               <font>
+                  <Font name="Edwardian Script ITC" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="logoboulangerie" fitHeight="44.0" fitWidth="55.0" layoutX="21.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true" />
+            <DatePicker fx:id="date_liv" layoutX="623.0" layoutY="88.0" prefHeight="25.0" prefWidth="170.0" />
+            <Label layoutX="509.0" layoutY="93.0" text="date de livraison" />
+            <TextField fx:id="tell" alignment="CENTER" layoutX="347.0" layoutY="89.0" prefHeight="25.0" prefWidth="131.0" promptText="TELL DU CLIENT" />
+         </children>
+      </Pane>
+   </top>
+   <right>
+      <Pane prefHeight="617.0" prefWidth="304.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="6.0" layoutY="50.0" prefHeight="337.0" prefWidth="293.0" style="-fx-border-color: #ffbc0f;">
+               <children>
+                  <TextField fx:id="nompro" layoutX="131.0" layoutY="87.0" />
+                  <TextField fx:id="prixpro" layoutX="131.0" layoutY="144.0" promptText="EN CHIFRES" />
+                  <Label layoutX="4.0" layoutY="83.0" text="nom du produit">
+                     <font>
+                        <Font name="Edwardian Script ITC" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="140.0" text="quantité du produit">
+                     <font>
+                        <Font name="Edwardian Script ITC" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="descrproc" layoutX="4.0" layoutY="189.0" text="description de produit :">
+                     <font>
+                        <Font name="Edwardian Script ITC" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="descriptiontext" alignment="TOP_LEFT" layoutX="150.0" layoutY="197.0" prefHeight="89.0" prefWidth="136.0" text=" " />
+               </children>
+            </Pane>
+            <JFXButton fx:id="btnadd" buttonType="RAISED" layoutX="20.0" layoutY="394.0" onMouseClicked="#btnaddclique" style="-fx-background-color: #ffbc0f;" text="ajouter" />
+            <JFXButton fx:id="btnupdate" buttonType="RAISED" layoutX="126.0" layoutY="394.0" onMouseClicked="#btnmiseajourclique" style="-fx-background-color: #ffbc0f;" text="modiffier" />
+            <JFXButton fx:id="btndelate" buttonType="RAISED" layoutX="220.0" layoutY="394.0" onMouseClicked="#btndelateclique" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #ffbc0f;" text="supprimer" />
+         </children>
+      </Pane>
+   </right>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="produittable" prefHeight="449.0" prefWidth="499.0" />
+         </children>
+      </Pane>
+   </center>
+   <bottom>
+      <Pane prefHeight="63.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btnsave" buttonType="RAISED" layoutX="200.0" layoutY="16.0" onMouseClicked="#btnsaveclique" prefHeight="25.0" prefWidth="481.0" style="-fx-background-color: #ffbc0f;" text="enregistrer" />
+         </children>
+      </Pane>
+   </bottom>
+   <left>
+      <Pane prefHeight="447.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>

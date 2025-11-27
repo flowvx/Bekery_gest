@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="box" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="132.0" prefWidth="398.0" style="-fx-border-radius: 36; -fx-border-color: ORANGE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bgest.ProduitmodelsController">
+   <children>
+      <Label fx:id="pnom" layoutX="140.0" layoutY="14.0" prefHeight="33.0" prefWidth="239.0">
+         <font>
+            <Font name="Bodoni MT" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="pfournisseur" layoutX="370.0" layoutY="95.0" prefHeight="18.0" prefWidth="5.0" textAlignment="CENTER">
+         <font>
+            <Font name="Bodoni MT" size="15.0" />
+         </font>
+      </Label>
+      <Text layoutX="173.0" layoutY="-94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" wrappingWidth="213.990234375" />
+      <Label fx:id="pdescription" layoutX="137.0" layoutY="45.0" prefHeight="51.0" prefWidth="246.0" text=" " textAlignment="CENTER">
+         <font>
+            <Font name="Bodoni MT" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="91.0" prefHeight="40.0" prefWidth="95.0" text="disponible :" textAlignment="CENTER">
+         <font>
+            <Font name="Bodoni MT" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="quantité" layoutX="225.0" layoutY="94.0" prefHeight="33.0" prefWidth="95.0" text="100" textAlignment="CENTER">
+         <font>
+            <Font name="Bodoni MT" size="15.0" />
+         </font>
+      </Label>
+      <Pane layoutX="407.0" prefHeight="182.0" prefWidth="31.0" />
+      <ImageView fx:id="pimage" fitHeight="113.0" fitWidth="106.0" layoutX="21.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
